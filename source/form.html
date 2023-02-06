@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Кэт энерджи</title>
+  </head>
+  <body class="page-body">
+
+    <header class="page-body__header">
+
+      <!-- логотип магазина -->
+
+      <img class="header__header-logo" src="" alt="Логотип магазина Cat Energy">
+
+
+      <!-- навигация по сайту -->
+
+      <nav class="header__header-navigation">
+        <ul class="header-navigation__header-navigation-list">
+          <li class="header-navigation-list__header-navigation-item">
+            <a class="header-navigation-item__header-navigation-link" href="./index.html">Главная</a>
+          </li>
+          <li class="header-navigation-list__header-navigation-item">
+            <a class="header-navigation-item__header-navigation-link" href="#">Каталог продукции</a>
+          </li>
+          <li class="header-navigation-list__header-navigation-item">
+            <a class="header-navigation-item__header-navigation-link" href="#">Подбор программы</a>
+          </li>
+        </ul>
+      </nav>
+
+    </header>
+
+    <main class="form-page">
+
+      <h1 class="form-page__form-page-title">Подбор программы</h1>
+      <p class="form-page__form-page-description">Заполните анкету, и мы подберем
+      программу питания для вашего кота</p>
+
+      <!-- данные кота -->
+
+      <div class="form-page__form-page-cat">
+        <form class="form-page-cat__form-page-cat-name">
+          <label for="cat-name-field-id">Имя:*</label>
+          <input id="cat-name-field-id" type="text" name="cat-name" placeholder="барсик">
+        </form>
+        <form class="form-page-cat__form-page-cat-weight">
+          <label for="cat-weight-field-id">Вес (кг):*</label>
+          <input id="cat-weight-field-id" type="text" name="cat-weight" placeholder="7">
+        </form>
+        <form class="form-page-cat__form-page-cat-age">
+          <label for="cat-name-age-id">Возраст (лет):</label>
+          <input id="cat-name-age-id" type="text" name="cat-age" placeholder="7">
+        </form>
+      </div>
+
+      <!-- выбор программы -->
+
+      <form class="form-page__program-choice-form">
+        <div>
+
+          <input type="radio" id="program-slim-choice-id" name="program-choice" value="slim">
+          <label for="program-slim-choice-id">похудение</label>
+
+          <input type="radio" id="program-pro-choice-id" name="program-choice" value="pro">
+          <label for="program-pro-choice-id">Набор массы</label>
+
+          <input type="radio" id="shop-help-choice-id" name="program-choice" value="shop-help">
+          <label for="shop-help-choice-id">Не знаю (Нужен ваш совет)</label>
+
+        </div>
+      </form>
+
+      <!-- контакты валдельца -->
+
+      <div class="form-page__owner-contacts-form">
+        <h2 class="owner-contacts-form__owner-contacts-form-title">Контактные данные (владельца кота)</h2>
+        <form>
+          <label for="owner-mail-field-id">E-mail:*</label>
+          <input id="owner-mail-field-id" type="text" name="owner-mail" placeholder="kuklachev@gmail.com">
+        </form>
+        <form>
+          <label for="owner-phone-field-id">E-mail:*</label>
+          <input id="owner-phone-field-id" type="text" name="owner-phone" placeholder="8 (960) 900-60-90">
+        </form>
+      </div>
+
+      <div class="form-page__comment-form">
+        <h2 class="comment-form__comment-form-title">Комментарий</h2>
+        <form>
+          <input id="owner-phone-field-id" type="text" name="owner-phone" placeholder="Расскажите обо всех повадках кота">
+        </form>
+      </div>
+
+      <!-- дополнительно -->
+
+      <div class="form-page__additional-form">
+        <h2 class="additional-form__additional-form-title">Дополнительно</h2>
+        <form>
+          <input id="sweetener-choice-id" type="checkbox" name="sweetener-choice" value="sweetener">
+          <label for="sweetener-choice-id">сахарозаменитель</label>
+
+          <input id="water-choice-id" type="checkbox" name="water-choice" value="water">
+          <label for="water-choice-id">питьевая вода</label>
+
+          <input id="milk-choice-id" type="checkbox" name="milk-choice" value="milk">
+          <label for="milk-choice-id">молоко</label>
+
+          <input id="vitamins-choice-id" type="checkbox" name="vitamins-choice" value="vitamins">
+          <label for="vitamins-choice-id">витамины</label>
+        </form>
+      </div>
+
+      <!-- кнопка для отправки на заявку -->
+
+      <div class="form-page__form-page-submit">
+        <input type="submit" name="submit-button" value="отправить заявку">
+      </div>
+
+      <span>* — Обязательные поля</span>
+
+    </main>
+
+    <footer class="page-body__footer">
+
+      <!-- адрес с местоположением -->
+
+      <section class="footer__address">
+        <h2 class="address__address-title">приглашаем к сотрудничеству дилеров!</h2>
+        <p class="address__address-description">ул. Большая Конюшенная, д. 19/8 <span class="adress-description__adress-description-city">Санкт-Петербург</span></p>
+        <img class="address__address-map-image" src="" alt="местоположение магазина на карте">
+      </section>
+
+      <img class="footer__footer-logo" src="" alt="Логотип магазина Cat Energy">
+
+      <!-- контакты -->
+
+      <div class="footer__footer-contacts">
+        <ul class="footer-contacts__footer-contacts-list">
+          <li class="footer-contacts-list__footer-contacts-item">
+            <a class="footer-contacts-item__footer-contacts-link--vkontakte" href="#"></a>
+          </li>
+          <li class="footer-contacts-list__footer-contacts-item">
+            <a class="footer-contacts-item__footer-contacts-link--youtube" href="#"></a>
+          </li>
+          <li class="footer-contacts-list__footer-contacts-item">
+            <a class="footer-contacts-item__footer-contacts-link--telegram" href="#"></a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- создатель сайта -->
+
+      <div class="footer__website-creator">
+        <p class="website-creator__website-creator-name">HTML Academy</p>
+        <img class="website-creator__website-creator-logo" src="" alt="логотип создателя сайта">
+      </div>
+
+    </footer>
+
+  </body>
