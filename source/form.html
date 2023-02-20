@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/style.min.css">
 </head>
 
 <body class="page-body">
@@ -47,7 +47,7 @@
     <!-- данные кота -->
     <form class="program-form" action="https://echo.htmlacademy.ru/" method="post">
 
-      <fieldset class="program-form__block">
+      <fieldset class="program-form__block program-form__block--name">
         <legend class="visually-hidden">Личные данные кота</legend>
         <ul class="program-form__list params">
           <li class="params__item input-text">
@@ -65,11 +65,11 @@
         </ul>
       </fieldset>
 
-      <fieldset class="program-form__block">
+      <fieldset class="program-form__block program-form__block--type">
         <legend class="program-form__title-block visually-hidden"></legend>
         <ul class="program-form__list program-type">
           <li class="program-type__item radio">
-            <input class="radio__input visually-hidden" type="radio" id="program-slim-choice" name="program-choice" value="slim">
+            <input class="radio__input visually-hidden" checked type="radio" id="program-slim-choice" name="program-choice" value="slim">
             <label class="radio__label" for="program-slim-choice">похудение</label>
           </li>
           <li class="program-type__item radio">
@@ -83,8 +83,10 @@
         </ul>
       </fieldset>
 
-      <fieldset class="program-form__block">
-        <legend class="program-form__title-block">Контактные данные (владельца кота)</legend>
+      <fieldset class="program-form__block program-form__block--contact">
+        <legend class="program-form__title-block special-title">
+          <span class="special-title__text">Контактные данные (владельца кота)</span>
+        </legend>
         <ul class="program-form__list program-type">
           <li class="program-type__item textfield">
             <label class="textfield__label" for="mail-owner">E-mail:*</label>

@@ -12,7 +12,7 @@
   position: relative;
   min-height: 30px;
   box-sizing: border-box;
-  padding-top: 3px;
+  padding-top: 7px;
 }
 
 .radio__label::before {
@@ -35,4 +35,9 @@
   top: 10px;
   background-color: #68b738;
   border-radius: 50%;
+  display: none;
+}
+
+.radio__input:checked + .radio__label::after {
+  display: block;
 }
