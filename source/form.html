@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Кэт энерджи</title>
+  <link rel="stylesheet" href="./css/style.min.css">
+</head>
+
+<body class="page-body">
+  <header class="page-body__header header">
+
+    <!-- логотип магазина -->
+
+    <a class="header__logo" href="index.html">
+      <picture>
+        <source media="(min-width: 1400px)" srcset="">
+        <source media="(min-width: 768px)" srcset="">
+        <img class="header__logo-img" src="" alt="Логотип магазина Cat Energy">
+      </picture>
+    </a>
+
+    <!-- навигация по сайту -->
+
+    <nav class="header__navigation navigation">
+      <button class="navigation__toggle">
+        <span class="visually-hidden">Открытие/закрытие меню</span>
+      </button>
+      <ul class="navigation__list">
+        <li class="navigation__item item-link">
+          <a class="navigation__link" href="./index.html">Главная</a>
+        </li>
+        <li class="navigation__item item-link">
+          <a class="navigation__link" href="./catalog.html">Каталог продукции</a>
+        </li>
+        <li class="navigation__item item-link">
+          <a class="navigation__link" href="./form.html">Подбор программы</a>
+        </li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <main class="form-page">
+
+    <h1 class="form-page__title main-title">Подбор программы</h1>
+    <p class="form-page__description main-description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+
+    <!-- данные кота -->
+    <form class="program-form" action="https://echo.htmlacademy.ru/" method="post">
+
+      <fieldset class="program-form__block program-form__block--name">
+        <legend class="visually-hidden">Личные данные кота</legend>
+        <ul class="program-form__list params">
+          <li class="params__item input-text">
+            <label for="cat-name" class="input-text__label">Имя:*</label>
+            <input type="text" class="input-text__input" id="cat-name" name="cat-name" placeholder="барсик">
+          </li>
+          <li class="params__item input-text">
+            <label for="cat-weight" class="input-text__label">Вес (кг):*</label>
+            <input type="text" class="input-text__input" name="cat-weight" id="cat-weight" placeholder="7">
+          </li>
+          <li class="params__item input-text">
+            <label for="cat-age" class="input-text__label">Возраст (лет):</label>
+            <input type="text" class="input-text__input" name="cat-age" id="cat-age" placeholder="7">
+          </li>
+        </ul>
+      </fieldset>
+
+      <!-- выбор программы -->
+
+      <fieldset class="program-form__block program-form__block--type">
+        <legend class="program-form__title-block visually-hidden"></legend>
+        <ul class="program-form__list program-type">
+          <li class="program-type__item radio">
+            <input class="radio__input visually-hidden" checked type="radio" id="program-slim-choice" name="program-choice" value="slim">
+            <label class="radio__label" for="program-slim-choice">похудение</label>
+          </li>
+          <li class="program-type__item radio">
+            <input class="radio__input visually-hidden" type="radio" id="program-pro-choice" name="program-choice" value="pro">
+            <label class="radio__label" for="program-pro-choice">Набор массы</label>
+          </li>
+          <li class="program-type__item radio">
+            <input class="radio__input visually-hidden" type="radio" id="shop-help-choice" name="program-choice" value="shop-help">
+            <label class="radio__label" for="shop-help-choice">Не знаю (Нужен ваш совет)</label>
+          </li>
+        </ul>
+      </fieldset>
+
+      <!-- контакты -->
+
+      <fieldset class="program-form__block program-form__block--contact">
+        <legend class="program-form__title-block special-title">
+          <span class="special-title__text">Контактные данные (владельца кота)</span>
+        </legend>
+        <ul class="program-form__list params">
+          <li class="program-type__item textfield">
+            <label class="textfield__label" for="mail-owner">E-mail:*</label>
+            <input class="textfield__input" type="text" placeholder="kuklachev@gmail.com" id="mail-owner" name="mail-owner">
+          </li>
+          <li class="program-type__item textfield">
+            <label class="textfield__label" for="phone-owner">Телефон:*</label>
+            <input class="textfield__input" type="text" placeholder="8 (960) 900-60-90" id="phone-owner" name="phone-owner">
+          </li>
+        </ul>
+      </fieldset>
+
+      <!-- комментарий -->
+
+      <fieldset class="program-form__block coment">
+        <legend class="program-form__title-block special-title">
+          <span class="special-title__text special-title__text--coment">Комментарий</span>
+        </legend>
+        <textarea class="program-form__input coment__input" type="text" placeholder="Расскажите обо всех повадках кота" name="comment"></textarea>
+      </fieldset>
+
+      <!-- дополнительно -->
+
+      <fieldset class="program-form__block">
+        <legend class="program-form__title-block special-title">
+          <span class="special-title__text special-title--more">Дополнительно</span>
+        </legend>
+        <ul class="program-form__list program-type">
+          <li class="program-type__item checkbox">
+            <input class="checkbox__input visually-hidden" type="checkbox" id="sweetener" name="sweetener" value="sweetener">
+            <label class="checkbox__label" for="sweetener">сахарозаменитель</label>
+          </li>
+          <li class="program-type__item checkbox">
+            <input class="checkbox__input visually-hidden" type="checkbox" id="water" name="water" value="water">
+            <label class="checkbox__label" for="water">питьевая вода</label>
+          </li>
+          <li class="program-type__item checkbox">
+            <input class="checkbox__input visually-hidden" type="checkbox" id="milk" name="milk" value="milk">
+            <label class="checkbox__label" for="milk">молоко</label>
+          </li>
+          <li class="program-type__item checkbox">
+            <input class="checkbox__input visually-hidden" type="checkbox" id="vitamins" name="vitamins" value="vitamins">
+            <label class="checkbox__label" for="vitamins">витамины</label>
+          </li>
+        </ul>
+      </fieldset>
+
+      <!-- кнопка формы -->
+
+      <div class="program-form__button button-form">
+        <input class="button-form__input" type="submit" name="submit-button" value="отправить заявку">
+      </div>
+
+      <div class="program-form__span span-form">
+        <span class="span-form__span">* — Обязательные поля</span>
+      </div>
+
+    </form>
+
+  </main>
+
+  <!-- футер -->
+
+  <footer class="page-body__footer">
+
+    <!-- адрес с местоположением -->
+
+    <section class="footer__address adress">
+      <h2 class="address__title">приглашаем к сотрудничеству дилеров!</h2>
+      <p class="address__description">ул. Большая Конюшенная, д. 19/8
+        <span class="adress__city">
+          Санкт-Петербург
+        </span>
+      </p>
+      <img class="address__map-image" src="" alt="местоположение магазина на карте">
+    </section>
+
+    <img class="footer__logo" src="" alt="Логотип магазина Cat Energy">
+
+    <!-- контакты -->
+
+    <div class="footer__contacts contacts">
+      <ul class="contacts__list contacts-list">
+        <li class="contacts-list__item contact-type">
+          <a class="contact-type__link contact-type__link--vkontakte" href="#"></a>
+        </li>
+        <li class="contacts-list__item contact-type">
+          <a class="contact-type__link contact-type__link--youtube" href="#"></a>
+        </li>
+        <li class="contacts-list__item contact-type">
+          <a class="contact-type__link contact-type__link--telegram" href="#"></a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- создатель сайта -->
+
+    <div class="footer__website-creator creator">
+      <p class="creator__name">HTML Academy</p>
+      <img class="creator__logo" src="" alt="логотип создателя сайта">
+    </div>
+
+  </footer>
+
+</body>
